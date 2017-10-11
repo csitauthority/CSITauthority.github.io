@@ -32,6 +32,8 @@ defaultContentLanguageInSubdir = false
   # phone = "+9843692080"
   # skype = ""
   # telegram = ""
+  ghavatar = "https://avatars1.githubusercontent.com/u/31313881?v=4"
+
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""
