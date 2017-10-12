@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSITauthority on CSITauthority</title>
-    <link>https://csitauthority.gitub.io/</link>
+    <link>https://csitauthority.github.io/</link>
     <description>Recent content in CSITauthority on CSITauthority</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>I am my own grandfather problem</title>
-      <link>https://csitauthority.gitub.io/post/grandfather-problem/</link>
+      <link>https://csitauthority.github.io/post/grandfather-problem/</link>
       <pubDate>Wed, 11 Oct 2017 22:13:18 +0545</pubDate>
       
-      <guid>https://csitauthority.gitub.io/post/grandfather-problem/</guid>
+      <guid>https://csitauthority.github.io/post/grandfather-problem/</guid>
       <description>
 
 &lt;p&gt;Many, many years ago when I was twenty-three&lt;br/&gt;
@@ -112,10 +112,10 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
     
     <item>
       <title>BSc.CSIT</title>
-      <link>https://csitauthority.gitub.io/page/bsccsit/</link>
+      <link>https://csitauthority.github.io/page/bsccsit/</link>
       <pubDate>Wed, 11 Oct 2017 12:24:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/page/bsccsit/</guid>
+      <guid>https://csitauthority.github.io/page/bsccsit/</guid>
       <description>&lt;style&gt;
     .article-container{margin-top: 2em;}
 &lt;/style&gt;
@@ -124,39 +124,39 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
     
     <item>
       <title>Example Talk</title>
-      <link>https://csitauthority.gitub.io/_ignore/talk/example-talk/</link>
+      <link>https://csitauthority.github.io/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/_ignore/talk/example-talk/</guid>
+      <guid>https://csitauthority.github.io/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Virtual Tour of Bhimsen Tower</title>
-      <link>https://csitauthority.gitub.io/project/virtual-tour-of-bhimsen-tower/</link>
+      <link>https://csitauthority.github.io/project/virtual-tour-of-bhimsen-tower/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/project/virtual-tour-of-bhimsen-tower/</guid>
+      <guid>https://csitauthority.github.io/project/virtual-tour-of-bhimsen-tower/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>https://csitauthority.gitub.io/_ignore/publication/person-re-identification/</link>
+      <link>https://csitauthority.github.io/publication/person-re-identification/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/_ignore/publication/person-re-identification/</guid>
+      <guid>https://csitauthority.github.io/publication/person-re-identification/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Dining Philosophers Problem</title>
-      <link>https://csitauthority.gitub.io/post/dining-philosophers-problem/</link>
+      <link>https://csitauthority.github.io/post/dining-philosophers-problem/</link>
       <pubDate>Thu, 19 Mar 2015 21:15:56 +0545</pubDate>
       
-      <guid>https://csitauthority.gitub.io/post/dining-philosophers-problem/</guid>
+      <guid>https://csitauthority.github.io/post/dining-philosophers-problem/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;//www.youtube.com/embed/M3CNoX8wetM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
@@ -172,10 +172,10 @@ credit: Karthik, Kaushik, Chaitanya, Apurva Chandra and Dilip Malya&amp;hellip; 
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>https://csitauthority.gitub.io/_ignore/publication/clothing-search/</link>
+      <link>https://csitauthority.github.io/publication/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/_ignore/publication/clothing-search/</guid>
+      <guid>https://csitauthority.github.io/publication/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

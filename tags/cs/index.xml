@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cs on CSITauthority</title>
-    <link>https://csitauthority.gitub.io/tags/cs/</link>
+    <link>https://csitauthority.github.io/tags/cs/</link>
     <description>Recent content in Cs on CSITauthority</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Virtual Tour of Bhimsen Tower</title>
-      <link>https://csitauthority.gitub.io/project/virtual-tour-of-bhimsen-tower/</link>
+      <link>https://csitauthority.github.io/project/virtual-tour-of-bhimsen-tower/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://csitauthority.gitub.io/project/virtual-tour-of-bhimsen-tower/</guid>
+      <guid>https://csitauthority.github.io/project/virtual-tour-of-bhimsen-tower/</guid>
       <description></description>
     </item>
     
