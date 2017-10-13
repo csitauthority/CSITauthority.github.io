@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CSITauthority</title>
+    <link>https://csitauthority.github.io/post/</link>
+    <description>Recent content in Posts on CSITauthority</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 CSITauthority</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I am my own grandfather problem</title>
+      <link>https://csitauthority.github.io/post/grandfather-problem/</link>
+      <pubDate>Wed, 11 Oct 2017 22:13:18 +0545</pubDate>
+      
+      <guid>https://csitauthority.github.io/post/grandfather-problem/</guid>
+      <description>
+
+&lt;p&gt;Many, many years ago when I was twenty-three&lt;br/&gt;
+I was married to a widow who was pretty as could be&lt;br/&gt;
+This widow had a grownup daughter who had hair of red&lt;br/&gt;
+My father fell in love with her, and soon they too were wed&lt;br/&gt;
+This made my Dad my son-in-law and really changed my life&lt;br/&gt;
+For now my daughter was my mother, &amp;lsquo;cause she was my father&amp;rsquo;s wife&lt;br/&gt;
+And to complicate the matter, even though it brought me joy,&lt;br/&gt;
+I soon became the father of a bouncing baby boy&lt;br/&gt;
+My little baby then became a brother-in-law to Dad&lt;br/&gt;
+And so became my uncle, though it made me very sad&lt;br/&gt;
+For if he were my uncle, then that also made him brother&lt;br/&gt;
+Of the widow&amp;rsquo;s grownup daughter, who was of course my stepmother&lt;br/&gt;
+Father&amp;rsquo;s wife then had a son who kept them on the run&lt;br/&gt;
+And he became my grandchild, for he was my daughter&amp;rsquo;s son&lt;br/&gt;
+My wife is now my mother&amp;rsquo;s mother, and it makes me blue&lt;br/&gt;
+Because although she is my wife, she&amp;rsquo;s my grandmother too&lt;br/&gt;
+Now if my wife is my grandmother, then I&amp;rsquo;m her grandchild&lt;br/&gt;
+And every time I think of it, it nearly drives me wild&lt;br/&gt;
+&amp;lsquo;Cause now I have become the strangest case you ever saw&lt;br/&gt;
+As husband of my grandmother, I am my own grandpa&lt;br/&gt;&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;CHALLENGES:&lt;br/&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write Predicate Calculus representing the situation with a series of expressions&lt;/li&gt;
+&lt;li&gt;Use modus ponens to conclude that “I am my own grandfather”.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;first-try-it-out-yourself&#34;&gt;First Try it out yourself!&lt;/h2&gt;
+
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Solution
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;pre&gt;&lt;code class=&#34;language-prolog&#34;&gt;Predicate Calculus representing the situation with a series of expressions: 
+married(i,w).
+mother(w,d).
+mother(d,s1).
+father(f,s1).
+father(f,i).
+father(i,s2).
+mother(w,s2).
+use modus ponens on this system to prove the conclusion that “I am my own grandfather”.
+1. ∀ X Y ∃ Z married(X,Z)∧mother(Z,Y)⇒ father(X,Y).
+2. ∀ X Y ∃ Z father(Z,X)∧father(Z,Y)⇒ brother(X,Y).
+3. ∀ X Y ∃ Z father(X,Z),mother(Z,Y)⇒ grandfather(X,Y).
+4. ∀ X Y ∃ Z grandfather(X,Z)∧brother(Z,Y)⇒ grandfather(X,Y).
+5. married(i,w).
+6. mother(w,d).
+7. mother(d,s1).
+8. father(f,s1).
+9. father(f,i).
+10. From 1,5,6::
+	married(i,w)∧mother(w,d)⇒ father(i,d).
+11. From 3,7,10 ::
+	father(i,d),mother(d,s1)⇒ grandfather(i,s1).
+12. From 2,8,9 ::
+	father(f,s1)∧father(f,i)⇒ brother(s1,i).
+13. From 4,11,12 ::
+	grandfather(i,s1)∧brother(s1,i)⇒ grandfather(i,i).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hence, I&amp;rsquo;m my own grandfather.&lt;/p&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;now-a-video&#34;&gt;Now, a video..&lt;/h3&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/lRkKBKyBoFM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m my own Grandpa. Interesting idea, isn&amp;rsquo;t it?&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dining Philosophers Problem</title>
+      <link>https://csitauthority.github.io/post/dining-philosophers-problem/</link>
+      <pubDate>Thu, 19 Mar 2015 21:15:56 +0545</pubDate>
+      
+      <guid>https://csitauthority.github.io/post/dining-philosophers-problem/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/M3CNoX8wetM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;source: aynesh
+credit: Karthik, Kaushik, Chaitanya, Apurva Chandra and Dilip Malya&amp;hellip; and some other guest appearances&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
