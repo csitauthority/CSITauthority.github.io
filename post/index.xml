@@ -11,6 +11,69 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>VLAN 101</title>
+      <link>https://csitauthority.github.io/post/vlan-101/</link>
+      <pubDate>Sun, 15 Oct 2017 21:15:56 +0545</pubDate>
+      
+      <guid>https://csitauthority.github.io/post/vlan-101/</guid>
+      <description>&lt;p&gt;XYZ is a small business office. It needs 20 different hosts to be connected. Ten for IT department, five for finance and, remaining five for sales. Due to security purpose, finance data should not be seen by the sales or, the IT department and, vice versa.&lt;/p&gt;
+
+&lt;p&gt;If you are asked to setup the network, how would you do this? The infeasible answer is self evident: Use three different switches in each department. However, if you do this, the cost will increase and many port will be left unused.&lt;/p&gt;
+
+&lt;p&gt;The best solution is creating virtual local area network in, a single, 24-port switch. The host of IT department, sales and, finance are connected to the same switch and, three logical portion are made as follows:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;VLAN&lt;/th&gt;
+&lt;th&gt;Hosts&lt;/th&gt;
+&lt;th&gt;Departments&lt;/th&gt;
+&lt;th&gt;Swithport&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;Computer C1-10&lt;/td&gt;
+&lt;td&gt;IT&lt;/td&gt;
+&lt;td&gt;Port 1 to 10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;Computer C11-15&lt;/td&gt;
+&lt;td&gt;Sales&lt;/td&gt;
+&lt;td&gt;Port 11 to 15&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;Computer C16-20&lt;/td&gt;
+&lt;td&gt;Fainance&lt;/td&gt;
+&lt;td&gt;Port 16 to 20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In this way, logical partition is created in switch (layer 2), which is called VLAN. We can name the VLAN. In our case, Computer C1-C10 of IT department is assigned VLAN 10,  C11-C15 of sales is assigned VLAN 20 and, C16-C20 is assigned VLAN 30.&lt;/p&gt;
+
+&lt;p&gt;In cisco switch, VLAN can be numbered from 2 to 4049. VLAN 1, which is cisco default, can be used but not modified or, deleted. Within the range 2-1005, you can create use, modify and, delete VLAN. 1005-4049 is extended VLAN which has an always active state.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../img/vlan-in-cisco-switch.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now assume computer 17 sends broadcast packet. Will this packet be forwarded to sales or, IT department? – NEITHER, because VLAN is a broadcast domain of its own. Computers from IT or, finance will not get the packet. VLAN helps control the reach of broadcast frame. Also, Unicast and multicast frames are forwarded within VLAN only.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  Next -&amp;gt; configuring VLAN in cisco switch(stay tuned)
+&lt;/div&gt;
+
+
+&lt;p&gt;author: &lt;a href=&#34;https://github.com/Pratik855&#34; target=&#34;_blank&#34;&gt;Pratik Gautam&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>I am my own grandfather problem</title>
       <link>https://csitauthority.github.io/post/grandfather-problem/</link>
       <pubDate>Wed, 11 Oct 2017 22:13:18 +0545</pubDate>

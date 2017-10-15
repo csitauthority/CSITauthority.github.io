@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://csitauthority.github.io/post/grandfather-problem/">
+  <link rel="canonical" href="https://csitauthority.github.io/post/vlan-101/">
 
   
 
-  <title>I am my own grandfather problem | CSITauthority</title>
+  <title>VLAN 101 | CSITauthority</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -158,14 +158,14 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">I am my own grandfather problem</h1>
+    <h1 itemprop="name">VLAN 101</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-10-11 22:13:18 &#43;0545 NPT" itemprop="datePublished">
-      Wed, Oct 11, 2017
+    <time datetime="2017-10-15 21:15:56 &#43;0545 NPT" itemprop="datePublished">
+      Sun, Oct 15, 2017
     </time>
   </span>
 
@@ -177,7 +177,7 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/tags/algorithm">algorithm</a
+    <a href="/tags/networking">networking</a
     >
     
   </span>
@@ -190,35 +190,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcsitauthority.github.io%2fpost%2fgrandfather-problem%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcsitauthority.github.io%2fpost%2fvlan-101%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=I%20am%20my%20own%20grandfather%20problem&amp;url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fgrandfather-problem%2f"
+         href="https://twitter.com/intent/tweet?text=VLAN%20101&amp;url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fvlan-101%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fgrandfather-problem%2f&amp;title=I%20am%20my%20own%20grandfather%20problem"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fvlan-101%2f&amp;title=VLAN%20101"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fgrandfather-problem%2f&amp;title=I%20am%20my%20own%20grandfather%20problem"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fcsitauthority.github.io%2fpost%2fvlan-101%2f&amp;title=VLAN%20101"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=I%20am%20my%20own%20grandfather%20problem&amp;body=https%3a%2f%2fcsitauthority.github.io%2fpost%2fgrandfather-problem%2f">
+         href="mailto:?subject=VLAN%20101&amp;body=https%3a%2f%2fcsitauthority.github.io%2fpost%2fvlan-101%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -231,97 +231,60 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>XYZ is a small business office. It needs 20 different hosts to be connected. Ten for IT department, five for finance and, remaining five for sales. Due to security purpose, finance data should not be seen by the sales or, the IT department and, vice versa.</p>
 
-<p>Many, many years ago when I was twenty-three<br/>
-I was married to a widow who was pretty as could be<br/>
-This widow had a grownup daughter who had hair of red<br/>
-My father fell in love with her, and soon they too were wed<br/>
-This made my Dad my son-in-law and really changed my life<br/>
-For now my daughter was my mother, &lsquo;cause she was my father&rsquo;s wife<br/>
-And to complicate the matter, even though it brought me joy,<br/>
-I soon became the father of a bouncing baby boy<br/>
-My little baby then became a brother-in-law to Dad<br/>
-And so became my uncle, though it made me very sad<br/>
-For if he were my uncle, then that also made him brother<br/>
-Of the widow&rsquo;s grownup daughter, who was of course my stepmother<br/>
-Father&rsquo;s wife then had a son who kept them on the run<br/>
-And he became my grandchild, for he was my daughter&rsquo;s son<br/>
-My wife is now my mother&rsquo;s mother, and it makes me blue<br/>
-Because although she is my wife, she&rsquo;s my grandmother too<br/>
-Now if my wife is my grandmother, then I&rsquo;m her grandchild<br/>
-And every time I think of it, it nearly drives me wild<br/>
-&lsquo;Cause now I have become the strangest case you ever saw<br/>
-As husband of my grandmother, I am my own grandpa<br/></p>
+<p>If you are asked to setup the network, how would you do this? The infeasible answer is self evident: Use three different switches in each department. However, if you do this, the cost will increase and many port will be left unused.</p>
 
-<div class="alert alert-note">
-  <p>CHALLENGES:<br/></p>
+<p>The best solution is creating virtual local area network in, a single, 24-port switch. The host of IT department, sales and, finance are connected to the same switch and, three logical portion are made as follows:</p>
 
-<ol>
-<li>Write Predicate Calculus representing the situation with a series of expressions</li>
-<li>Use modus ponens to conclude that “I am my own grandfather”.</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>VLAN</th>
+<th>Hosts</th>
+<th>Departments</th>
+<th>Swithport</th>
+</tr>
+</thead>
 
+<tbody>
+<tr>
+<td>10</td>
+<td>Computer C1-10</td>
+<td>IT</td>
+<td>Port 1 to 10</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>Computer C11-15</td>
+<td>Sales</td>
+<td>Port 11 to 15</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td>Computer C16-20</td>
+<td>Fainance</td>
+<td>Port 16 to 20</td>
+</tr>
+</tbody>
+</table>
+
+<p>In this way, logical partition is created in switch (layer 2), which is called VLAN. We can name the VLAN. In our case, Computer C1-C10 of IT department is assigned VLAN 10,  C11-C15 of sales is assigned VLAN 20 and, C16-C20 is assigned VLAN 30.</p>
+
+<p>In cisco switch, VLAN can be numbered from 2 to 4049. VLAN 1, which is cisco default, can be used but not modified or, deleted. Within the range 2-1005, you can create use, modify and, delete VLAN. 1005-4049 is extended VLAN which has an always active state.</p>
+
+<p><img src="../../img/vlan-in-cisco-switch.png" alt="" /></p>
+
+<p>Now assume computer 17 sends broadcast packet. Will this packet be forwarded to sales or, IT department? – NEITHER, because VLAN is a broadcast domain of its own. Computers from IT or, finance will not get the packet. VLAN helps control the reach of broadcast frame. Also, Unicast and multicast frames are forwarded within VLAN only.</p>
+
+<div class="alert alert-info">
+  Next -&gt; configuring VLAN in cisco switch(stay tuned)
 </div>
 
 
-<h2 id="first-try-it-out-yourself">First Try it out yourself!</h2>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
-        <span>
-        
-    	
-    	Solution
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <pre><code class="language-prolog">Predicate Calculus representing the situation with a series of expressions: 
-married(i,w).
-mother(w,d).
-mother(d,s1).
-father(f,s1).
-father(f,i).
-father(i,s2).
-mother(w,s2).
-use modus ponens on this system to prove the conclusion that “I am my own grandfather”.
-1. ∀ X Y ∃ Z married(X,Z)∧mother(Z,Y)⇒ father(X,Y).
-2. ∀ X Y ∃ Z father(Z,X)∧father(Z,Y)⇒ brother(X,Y).
-3. ∀ X Y ∃ Z father(X,Z),mother(Z,Y)⇒ grandfather(X,Y).
-4. ∀ X Y ∃ Z grandfather(X,Z)∧brother(Z,Y)⇒ grandfather(X,Y).
-5. married(i,w).
-6. mother(w,d).
-7. mother(d,s1).
-8. father(f,s1).
-9. father(f,i).
-10. From 1,5,6::
-	married(i,w)∧mother(w,d)⇒ father(i,d).
-11. From 3,7,10 ::
-	father(i,d),mother(d,s1)⇒ grandfather(i,s1).
-12. From 2,8,9 ::
-	father(f,s1)∧father(f,i)⇒ brother(s1,i).
-13. From 4,11,12 ::
-	grandfather(i,s1)∧brother(s1,i)⇒ grandfather(i,i).
-</code></pre>
-
-<p>Hence, I&rsquo;m my own grandfather.</p>
-
-    </div>
-</div>
-
-<h3 id="now-a-video">Now, a video..</h3>
-
-
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/lRkKBKyBoFM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
- </div>
-
-
-<blockquote>
-<p>I&rsquo;m my own Grandpa. Interesting idea, isn&rsquo;t it?</p>
-</blockquote>
+<p>author: <a href="https://github.com/Pratik855" target="_blank">Pratik Gautam</a></p>
 
     </div>
   </div>
@@ -334,7 +297,7 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
                   
                   
                   
-                  <a class="github-link" href="https://github.com/csitauthority/csitauthority.github.io/tree/master/HUGO/content/post/grandfather-problem.md" target="blank"><i class="fa fa-code-fork"></i>Edit this page</a>
+                  <a class="github-link" href="https://github.com/csitauthority/csitauthority.github.io/tree/master/HUGO/content/post/vlan-101.md" target="blank"><i class="fa fa-code-fork"></i>Edit this page</a>
                   
                 
 
@@ -344,13 +307,10 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://csitauthority.github.io/post/dining-philosophers-problem/"><span
-      aria-hidden="true">&larr;</span> Dining Philosophers Problem</a></li>
+    <li class="previous"><a href="https://csitauthority.github.io/post/grandfather-problem/"><span
+      aria-hidden="true">&larr;</span> I am my own grandfather problem</a></li>
     
 
-    
-    <li class="next"><a href="https://csitauthority.github.io/post/vlan-101/">VLAN 101 <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
