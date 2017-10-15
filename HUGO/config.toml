@@ -1,7 +1,7 @@
 baseurl = "https://csitauthority.github.io/"  # End your URL with a `/` trailing slash.
 title = "CSITauthority"
 copyright = "&copy; 2016 CSITauthority"
-theme = "academic"
+theme = "hugo-academic"
 enableEmoji = true
 publishDir="docs"
 footnotereturnlinkcontents = "<sup>^</sup>"
