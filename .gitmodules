@@ -1,0 +1,3 @@
+[submodule "HUGO/themes"]
+	path = HUGO/themes
+	url = https://github.com/csitauthority/csitauthority-academic.git
