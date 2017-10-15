@@ -9,4 +9,4 @@ tags = ["csitauthority","facebookpage"]
 math = false
 +++
 
-{{% cafeed "https://columbusintlschool.com/csitauthority/fb.json" %}}
+{{% cafeed "https://api.github.com/repos/csitauthority/8thSem/contributors" %}}

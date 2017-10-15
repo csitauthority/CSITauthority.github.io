@@ -11,14 +11,206 @@
     <atom:link href="/page/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>BSc.CSIT</title>
-      <link>https://csitauthority.github.io/page/bsccsit/</link>
+      <title>Be a part of the family</title>
+      <link>https://csitauthority.github.io/page/contribute/</link>
       <pubDate>Wed, 11 Oct 2017 12:24:00 +0000</pubDate>
       
-      <guid>https://csitauthority.github.io/page/bsccsit/</guid>
-      <description>&lt;style&gt;
-    .article-container{margin-top: 2em;}
+      <guid>https://csitauthority.github.io/page/contribute/</guid>
+      <description>
+
+&lt;style&gt;
+    div.alert{margin-top: 2em;}
+    div.alert a,
+    div.alert a:hover,
+    div.alert a:active
+    {
+        color: rgba(53,115,145,.9) !important;
+        text-decoration: underline !important;
+    }
+    div.alert a:hover
+    {
+        text-decoration: none !important;
+    }
+    div.alert p::before
+    {
+        color: rgba(53,115,145,.9) !important;
+    }
 &lt;/style&gt;
+
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;p&gt;It is important to note that if you&amp;rsquo;re trying to contribute towards a specific semester, this is not the place; every semester has &lt;a href=&#34;https://github.com/csitauthority/&#34; title=&#34;click and explore other repositories&#34; target=&#34;_blank&#34;&gt;it&amp;rsquo;s own repository.&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Although this guide prepares you for the main repository, you can follow the general guide given below to contribute in any part of CSITauthority. The method is similar, with slight changes, for other repositories.&lt;/p&gt;
+
+&lt;h2 id=&#34;easy-steps&#34;&gt;Easy steps:&lt;/h2&gt;
+
+&lt;h5 id=&#34;one-time-setup-step-1-2&#34;&gt;(One Time Setup; Step-1 &amp;amp; 2)&lt;/h5&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fork the repository&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to the main repository page and, on the upper-left corner, click the &lt;code&gt;fork&lt;/code&gt; button.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Copy remote URL and clone
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Go to your forked reposiory and copy the remote URL
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;p&gt;&lt;img src=&#34;../../img/contribute/copy-remote-URL.gif&#34; alt=&#34;&amp;quot;Copy Remote URL&amp;quot;&#34; title=&#34;copy the remote URL to clone your repository&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It should look something like this:&lt;/p&gt;
+
+&lt;p&gt;https:&amp;#047;&amp;#047;github.com&amp;#047;&lt;code&gt;UserName&lt;/code&gt;&amp;#047;CSITauthority.github.io.git&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;UserName = Your Github Username
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Now, use Git Bash to clone your forked repository
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;ul&gt;
+&lt;li&gt;First, determine a location on your device to save the repository.&lt;/li&gt;
+&lt;li&gt;On the Start Menu, search &lt;code&gt;Git Bash&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;To change the path to (&lt;em&gt;say&lt;/em&gt;)D-drive, type &lt;code&gt;cd d:&lt;/code&gt;
+&lt;img src=&#34;../../img/contribute/clone-your-repo.gif&#34; alt=&#34;&#34; title=&#34;use remote URL to clone your repository&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s not over, just yet. You&amp;rsquo;ll notice that there is an empty folder &lt;code&gt;HUGO/themes/csitauthority-academic&lt;/code&gt;. Its empty, by design (&lt;em&gt;you&amp;rsquo;ll know later&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;To populate it, type these commands in order(&lt;em&gt;resume from the last step&lt;/em&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cd csitauthority.github.io&lt;/code&gt; to change Path into the repository.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git submodule init&lt;/code&gt; to initialize the theme submodule.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git submodule update&lt;/code&gt; to update the theme submodule.
+&lt;img src=&#34;../../img/contribute/submodules.png&#34; alt=&#34;&#34; title=&#34;continued from the previous image&#34; /&gt;
+&lt;div class=&#34;alert alert-success&#34;&gt;
+Congratulations! Your &lt;strong&gt;one-time&lt;/strong&gt; setup of CSITauthority repository is over. All and any changes you make in the future will be very easy to collaborate with everybody!
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  The following simple steps are necessary whenever you want to send your changes or, receive changes made my everybody else
+&lt;/div&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Commiting and Pushing changes
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Make Desired Changes
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;ul&gt;
+&lt;li&gt;On a freshly cloned repository, make changes as desired. (&lt;em&gt;However, If you have cloned ages ago, it makes sense to first &lt;code&gt;fetch&lt;/code&gt; before making any changes&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;ie. For &lt;strong&gt;old clones&lt;/strong&gt;, these two simple commands should make them up-to-date
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git fetch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Commit your change
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;ul&gt;
+&lt;li&gt;Once you are satisfied with the changes that you&amp;rsquo;ve made, you can choose to commit. A commit is like a confirmation for a change; &lt;em&gt;you&amp;rsquo;re literally committing to that particular change:&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Commits &lt;strong&gt;need&lt;/strong&gt; reason. Hence, each commit is followed by a short message describing the change. &lt;code&gt;fixed the pagination bug&lt;/code&gt;, &lt;code&gt;added new functionality to the partial&lt;/code&gt;, &lt;code&gt;Update to an article&lt;/code&gt;,&lt;code&gt;Added TU 2074 WebTech Question Papers&lt;/code&gt;, etc.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Commits are painfully&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;easy&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;to do&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; to ready all the changes you&amp;rsquo;re made, for the commit&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;commit-message&amp;quot;&lt;/code&gt; to make a commit.
+&lt;em&gt;Make it meaningful.&lt;/em&gt; example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;Wrote a post on NLP&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git push&lt;/code&gt; to send your commit to your forked repository.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Send a pull request
+&lt;div class=&#34;expand&#34;&gt;
+    &lt;div class=&#34;expand-label&#34; style=&#34;cursor: pointer;&#34; onclick=&#34;$h = $(this);$h.next(&#39;div&#39;).slideToggle(100,function () {$h.children(&#39;i&#39;).attr(&#39;class&#39;,function () {return $h.next(&#39;div&#39;).is(&#39;:visible&#39;) ? &#39;fa fa-chevron-down&#39; : &#39;fa fa-chevron-right&#39;;});});&#34;&gt;
+        &lt;i style=&#34;font-size:x-small;&#34; class=&#34;fa fa-chevron-right&#34;&gt;&lt;/i&gt;
+        &lt;span&gt;
+        
+    	
+    	Let us know about your great work
+    	
+    	&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;expand-content&#34; style=&#34;display: none;&#34;&gt;
+        &lt;ul&gt;
+&lt;li&gt;All of the hard part is behind us. Sending a pull request is easy.
+
+&lt;ul&gt;
+&lt;li&gt;Go to your forked repository on your browser&lt;/li&gt;
+&lt;li&gt;Click on make a pull-request&lt;/li&gt;
+&lt;li&gt;Thats literally it! :)
+&lt;img src=&#34;../../img/contribute/make-pull-request.gif&#34; alt=&#34;&#34; title=&#34;making pull request requires atleast some change&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  Look forward to your post in the next website build, &lt;em&gt;that happens frequently&lt;/em&gt;.Your changes should already be available inside &lt;code&gt;master/HUGO/&lt;/code&gt; after your pull request has been accepted.
+&lt;/div&gt;
+&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
