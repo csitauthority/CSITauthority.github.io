@@ -5,6 +5,7 @@ theme = "csitauthority-academic"
 enableEmoji = true
 publishDir="docs"
 footnotereturnlinkcontents = "<sup>^</sup>"
+enableGitInfo = true
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "csitauthority"
@@ -34,6 +35,7 @@ defaultContentLanguageInSubdir = false
   # telegram = ""
   editURL = "https://github.com/csitauthority/csitauthority.github.io/tree/master/HUGO/content/"
   editURLtext = "Edit this page"
+  contentCommitsURL = "https://api.github.com/repos/csitauthority/CSITauthority.github.io/commits?path=HUGO/content/"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
   keybase = ""

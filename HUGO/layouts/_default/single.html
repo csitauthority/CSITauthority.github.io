@@ -8,6 +8,26 @@
   <div class="article-container">
     <h1 itemprop="name">{{ .Title }}</h1>
     {{ partial "article_metadata" (dict "content" . "is_list" 0) }}
+    <div class="article-container">
+
+	{{ if and (or .IsPage .IsSection) .Site.Params.contentCommitsURL }}
+      {{ $File := .File }}
+      {{ $Site := .Site }}
+      {{with $File.Path }}
+      {{ $fileDir := replace $File.Dir "\\" "/"}}
+      	{{ $url := $File.LogicalName | printf "%s%s" $fileDir | printf "%s%s" $Site.Params.contentCommitsURL }}
+      	{{ $.Scratch.Set "url" $url }}
+      {{ end }}
+  	{{ end }}
+	</div>
+
+{{ $url := $.Scratch.Get "url"}}
+  {{ range getJSON $url }}
+    <div style="display:inline-block; width:40px;"><a href="{{.author.html_url}}" target="_blank">
+    <img src="{{.author.avatar_url}}" alt="{{.author.login}}" text="{{.author.login}}" class="inline" width="40" height="40" style="height: 40px;height: 40px; vertical-align:middle; margin: 0 auto;"></a>
+  </div>
+  {{ end }}
+  <hr>
     <div class="article-style" itemprop="articleBody">
       {{ .Content }}
     </div>

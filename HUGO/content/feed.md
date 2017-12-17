@@ -1,7 +1,7 @@
 +++
 title = "CSITauthority feed"
 date = 2017-10-15T01:00:00+05:45
-draft = false
+draft = true
 summary = """
 Feeds from our facebook page
 """
