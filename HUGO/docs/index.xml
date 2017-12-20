@@ -11,6 +11,42 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Get free domain-name and student-packs</title>
+      <link>https://csitauthority.github.io/post/jeevanspost/</link>
+      <pubDate>Sun, 17 Dec 2017 16:55:20 +0545</pubDate>
+      
+      <guid>https://csitauthority.github.io/post/jeevanspost/</guid>
+      <description>&lt;p&gt;If you are looking for free domain then I will show you how to get &lt;code&gt;.me&lt;/code&gt; free domain along with other student pack provided by github.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First of all go to Github.com and create an id if you don’t have one.&lt;/li&gt;
+&lt;li&gt;Once you create an account on Github follow this &lt;a href=&#34;https://education.github.com&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt; for further process.&lt;/li&gt;
+&lt;li&gt;After you get on that link, follow the steps provided there to get the student pack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now to get free &lt;code&gt;.me&lt;/code&gt; domain follow the following steps.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create an account on &lt;a href=&#34;https://www.namecheap.com/&#34; target=&#34;_blank&#34;&gt;Namecheap&lt;/a&gt; and make sure you are logged in properly.&lt;/li&gt;
+&lt;li&gt;Since you already got the student developer pack, go to this link&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thenafter click on namecheap domain option.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There you will get access code to create a free .me domain.&lt;/li&gt;
+&lt;li&gt;Once you get that code goto Namecheap and use that access code and follow the instruction there provided.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you did all the process correctly then you will be able to get free .me domain.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Don’t forget , you can get many awesome tools in student pack so use it wisely put it in proper use.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>IT officer मा IOE को ठेक्कापट्टा ?</title>
       <link>https://csitauthority.github.io/post/ioe-lobbys-itofficer-post/</link>
       <pubDate>Thu, 26 Oct 2017 21:15:56 +0545</pubDate>
@@ -188,13 +224,13 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
 8. father(f,s1).
 9. father(f,i).
 10. From 1,5,6::
-	married(i,w)∧mother(w,d)⇒ father(i,d).
+    married(i,w)∧mother(w,d)⇒ father(i,d).
 11. From 3,7,10 ::
-	father(i,d),mother(d,s1)⇒ grandfather(i,s1).
+    father(i,d),mother(d,s1)⇒ grandfather(i,s1).
 12. From 2,8,9 ::
-	father(f,s1)∧father(f,i)⇒ brother(s1,i).
+    father(f,s1)∧father(f,i)⇒ brother(s1,i).
 13. From 4,11,12 ::
-	grandfather(i,s1)∧brother(s1,i)⇒ grandfather(i,i).
+    grandfather(i,s1)∧brother(s1,i)⇒ grandfather(i,i).
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Hence, I&amp;rsquo;m my own grandfather.&lt;/p&gt;
@@ -206,7 +242,7 @@ use modus ponens on this system to prove the conclusion that “I am my own gran
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/lRkKBKyBoFM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/lRkKBKyBoFM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
 
@@ -457,7 +493,7 @@ Congratulations! Your &lt;strong&gt;one-time&lt;/strong&gt; setup of CSITauthori
       <guid>https://csitauthority.github.io/post/dining-philosophers-problem/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/M3CNoX8wetM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/M3CNoX8wetM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
  &lt;/div&gt;
 
 
