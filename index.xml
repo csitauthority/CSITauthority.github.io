@@ -11,6 +11,124 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Recent Comments</title>
+      <link>https://csitauthority.github.io/recentcomments/</link>
+      <pubDate>Wed, 20 Dec 2017 22:10:10 +0545</pubDate>
+      
+      <guid>https://csitauthority.github.io/recentcomments/</guid>
+      <description>
+
+&lt;h4 id=&#34;these-are-some-of-the-recent-comments-all-over-the-site&#34;&gt;These are some of the recent comments all over the site&lt;/h4&gt;
+
+&lt;!-- MOVE THIS SEGMENT TO SHORTCODE LATER --&gt;
+
+&lt;style type=&#34;text/css&#34;&gt;
+    ul#comments {
+  list-style-type: none;
+  font-family: &#34;Helvetica Neue&#34;,arial,sans-serif;
+  font-size: 15px;
+  color: #a5b2b9;
+}
+
+ul#comments li { margin-bottom: 30px; position: relative; }
+ul#comments li a { text-decoration: none; color: rgb(102, 204, 204); }
+
+.avatar-container { width: 60px; box-sizing: border-box; }
+.avatar { width: 50px; height: 50px; border-radius: 5px; float: left; margin: 5px; }
+
+.post-container { padding-top: 3px; margin-left: 70px;  box-sizing: border-box; }
+.post-container p { color: #3f4549; }
+.author_name { font-weight: bold; font-size: 13px; }
+
+.timeago, .posted { 
+  font-weight: 500;
+  font-size: 12px;
+  color: #a5b2b9;
+  color: rgba(0,39,59,.35);
+}
+
+.bullet {
+  padding: 0 2px;
+  font-size: 10px;
+  color: #ccc;
+  line-height: 1.4;
+}
+&lt;/style&gt;
+
+&lt;ul id=&#34;comments&#34;&gt;
+  &lt;script id=&#34;comments-template&#34; type=&#34;text/x-handlebars-template&#34;&gt;
+    {{#each response}}
+      &lt;li&gt;
+        &lt;div class=&#34;avatar-container&#34;&gt;
+          &lt;a href=&#34;{{author.profileUrl}}&#34; target=&#34;_blank&#34;&gt;
+            &lt;img src=&#34;{{author.avatar.small.permalink}}&#34; class=&#34;avatar&#34; alt=&#34;avatar&#34; /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;post-container&#34;&gt;
+          &lt;a href=&#34;{{author.profileUrl}}&#34; class=&#34;author_name&#34; target=&#34;_blank&#34;&gt;
+            &lt;span class=&#34;author_name&#34;&gt;{{author.name}}
+          &lt;/a&gt;
+          
+          &lt;span class=&#34;bullet&#34; aria-hidden=&#34;true&#34;&gt;•&lt;/span&gt;
+
+          &lt;span class=&#34;timeago&#34; title=&#34;{{createdAt}}Z&#34;&gt;{{createdAt}}&lt;/span&gt;
+
+          &lt;p&gt;{{{message}}}&lt;/p&gt;
+
+          &lt;span class=&#34;posted&#34;&gt;posted on &lt;a href=&#34;{{thread.link}}&#34; target=&#34;_blank&#34;&gt;{{thread.title}}&lt;/a&gt;&lt;/span&gt;
+        &lt;/div&gt;    
+      &lt;/li&gt;
+    {{/each}}
+  &lt;/script&gt;
+&lt;/ul&gt;
+      
+
+&lt;script src=&#34;//code.jquery.com/jquery-1.11.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var DisqusRecent = {
+  init: function( config ) {
+    this.api_key     = config.api_key;
+    this.forum       = config.forum;
+    this.template    = config.template;
+    this.container   = config.container;
+
+    this.fetchRecentComments();
+  },
+
+  fetchRecentComments: function() {
+    $.ajax({
+      url: &#34;https://disqus.com/api/3.0/forums/listPosts.jsonp?forum=&#34;+this.forum+&#34;&amp;related=thread&amp;api_key=&#34;+this.api_key,
+      dataType: &#34;jsonp&#34;,
+      context: this,
+
+      success: function(results) {
+        var source   = $(this.template).html();
+        var template = Handlebars.compile(source);
+        $(this.container).html(template(results));
+
+        $(&#39;.timeago&#39;).timeago();
+      }
+    });
+  }
+}
+
+$(function() {
+  DisqusRecent.init({
+    api_key:     &#39;gidf0krBZdjU0zdg51gDFuQEMx6wqijXGR5T26m6SY6WdvT3xO3ghhuV2sVGcpOW&#39;,
+    forum:       &#39;csitauthority&#39;,
+    template:    &#39;#comments-template&#39;,
+    container:   &#39;#comments&#39;
+  });
+});
+
+&lt;!-- OC: https://codepen.io/jaimeiniesta/pen/DhKrd --&gt;
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Get free domain-name and student-packs</title>
       <link>https://csitauthority.github.io/post/jeevanspost/</link>
       <pubDate>Sun, 17 Dec 2017 16:55:20 +0545</pubDate>
